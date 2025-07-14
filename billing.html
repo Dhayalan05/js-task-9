@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/a236e5c085.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+  <!-- <div id="demo" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button class="button" data-bs-target="#demo" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="slide1"></button>
+      <button class="button" data-bs-target="#demo" data-bs-slide-to="0" aria-label="slide2"></button>
+      <button class="button" data-bs-target="#demo" data-bs-slide-to="0" aria-label="slide3"></button>
+    </div>
+
+    <div class="carousel-inner ">
+      <div class="carousel-item active ">
+        <img src="./assets/img9.gif" height="500px" alt="window" width="1100px">
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/img8.gif" height="500px" alt="code" width="1100px">
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/img7.gif" height="500px" alt="made" width="1100px">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span1 class="carousel-control-next-icon"></span1>
+    </button>
+  </div>
+   -->
+
+
+     <div id="demo" class="carousel slide " data-bs-ride="carousel">
+   <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+
+   <div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="./assets/img9.gif" alt="Burrger" width="1100px" height="500px">
+    </div>
+    <div class="carousel-item">
+        <img src="./assets/img8.gif" alt="food" width="1100px" height="500px">
+    </div>
+    <div class="carousel-item">
+        <img src="./assets/img7.gif" alt="kfc" width="1100px" height="500px">
+    </div>
+   </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span1 class="carousel-control-next-icon"></span1>
+  </button>
+  </div>
+
+   <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <br>
+       <select id="option"></select> 
+       <input type="number" placeholder="QUANTITY" id="quantity" class="input1">
+      </div>
+    </div>
+   </div>
+<br>
+    <button class="btn btn-info ngf" onclick="onLoad()">ADD</button>
+  <br>
+     <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <table class="table table-striped table-bordered table-hover text-white">
+            <thead>
+              <tr>
+                <th>PRODUCT</th>
+                <th>PRICE</th>
+                <th>AMOUNT</th>
+              </tr>
+            </thead>
+            <tbody id="body1" class="text--primary bg-dark"></tbody>
+          </table> 
+        <br>
+        <label>TOTAL AMOUNT:<input type="text" id="total" class="input"></label>
+        <br>
+        <button class="btn btn-info">BILL</button>
+        </div>
+      </div>
+     </div>
+<script src="scriptbill.js"></script>
+
+</body>
+</html>
